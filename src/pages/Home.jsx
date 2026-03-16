@@ -9,6 +9,7 @@ export default function Home() {
       <Hero title="Aerocellutions"
       subtitle="A part of McGill Biodesign"
       bgImage={oceanfront}></Hero>
+
       <ImageSection 
         title="What We Do" 
         //image={} 
@@ -19,6 +20,12 @@ export default function Home() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
         </p>
+        <div className="button-group">
+          <Link to="./Mission" className="btn btn-primary">
+          Our Work
+          </Link>
+        </div>
+        
       </ImageSection>
 
       <ImageSection 
@@ -31,6 +38,15 @@ export default function Home() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
         </p>
+        <div className="button-group">
+          <Link to="./About" className="btn btn-primary">
+          Our Team
+          </Link>
+          <Link to="./Contact" className="btn btn-secondary">
+            Contact Us
+          </Link>
+        </div>
+         
       </ImageSection>
 
 
@@ -44,6 +60,23 @@ export default function Home() {
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
         </p>
+
+        <div className="button-group">
+          <a 
+            href="https://biodesignchallenge.org" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-primary external-btn">
+            BDC Official Site <span className="icon">↗</span>
+          </a>
+          <a
+          href="https://www.mcgillbiodesign.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-secondary external-btn">
+          McGill Biodesign <span className="icon">↗</span>
+          </a>
+        </div>
       </ImageSection>
 
 
