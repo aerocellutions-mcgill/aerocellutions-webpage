@@ -1,0 +1,44 @@
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  background-color: rgba(255, 255, 255, 0.6); 
+  background-blend-mode: overlay;
+
+  min-height: 70vh; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 5rem; 
+  color: #101011b0; /* Very dark gray/black */
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -2px; 
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #374151; /* Slightly lighter gray */
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
