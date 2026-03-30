@@ -1,0 +1,101 @@
+/* src/components/ImageCarousel.css */
+
+.carousel-section {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* Space between the text and the images */
+}
+
+/* --- Header & Text --- */
+.carousel-header {
+  text-align: center;
+}
+
+.carousel-title {
+  color: #1A4A7A; 
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.carousel-description {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* --- The Slider --- */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  background-color: #f0f0f0;
+}
+
+.carousel-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  position: relative;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark gradient at the bottom for the text */
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  color: white;
+  padding: 3rem 2rem 1rem 2rem;
+  text-align: center;
+}
+
+.carousel-caption p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Square, grey-blue arrow buttons from your screenshot */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #5D7B9D; 
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+.carousel-arrow:hover {
+  background-color: #1A4A7A;
+}
+
+.left-arrow {
+  left: 1rem;
+}
+
+.right-arrow {
+  right: 1rem;
+}

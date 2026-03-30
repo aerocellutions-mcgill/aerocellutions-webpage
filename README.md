@@ -17,4 +17,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## Credits 
 Body of Water Beside Beach Sand by Josh Sorenson via pexels
+Vintage Telephone Beside the Bed by cottonbro sutdio via pexels
 https://colorhunt.co/palette/81a6c6aacddcf3e3d0d2c4b4

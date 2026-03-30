@@ -42,3 +42,16 @@
   gap: 1rem;
   justify-content: center;
 }
+
+.hero-title {
+  font-size: 2rem; /* Reduced from 3.5rem. (2.5rem is usually exactly 40px) */
+  color: #1A4A7A; 
+  margin: 0;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 700px; 
+  height: auto;  
+  margin-bottom: 1.5rem; 
+}

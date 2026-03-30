@@ -1,24 +1,28 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import oceanfront from '../assets/oceanfront.jpg';
+import bdcposter from '../assets/BDC2026.png';
 import ImageSection from '../components/ImageSection';
+
+import placeholder from '../assets/placeholderimage.png'
 
 export default function Home() {
   return (
     <div className="home-container">
       <Hero title="Aerocellutions"
       subtitle="A part of McGill Biodesign"
-      bgImage={oceanfront}></Hero>
+      bgImage={oceanfront}
+      isHome={true}></Hero>
 
       <ImageSection 
         title="What We Do" 
-        //image={} 
+        image={placeholder} 
         imageAlt="Lab research"
         imageReversed={false}
         bgColor="#81A6C6"
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
+          At aerocellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments. (I'm thinking of putting a picture from our lab)
         </p>
         <div className="button-group">
           <Link to="./Mission" className="btn btn-primary">
@@ -30,13 +34,13 @@ export default function Home() {
 
       <ImageSection 
         title="Our Team" 
-        //image={} 
+        image={placeholder} 
         imageAlt="Team Photo"
         imageReversed={true}
         bgColor="#AACDDC"
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
+          I'm thinking of taking that team picture we have on the staircase here, but perhaps another team picture can be done since I think the members have changed since last semester.
         </p>
         <div className="button-group">
           <Link to="./About" className="btn btn-primary">
@@ -52,13 +56,13 @@ export default function Home() {
 
       <ImageSection 
         title="Biodesign Challenge" 
-        //image={} 
+        image={bdcposter} 
         imageAlt="BDC 2025"
         imageReversed={false}
         bgColor="#F3E3D0"
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at ligula quis nunc luctus efficitur. Donec non congue quam. Morbi placerat nibh ligula, a porta felis commodo interdum. Ut tincidunt lobortis odio, eu blandit orci congue non. Integer iaculis sapien non ex posuere, eget blandit sem ultrices. Vestibulum turpis lectus, molestie vitae mollis non, dapibus sed purus. Suspendisse et dignissim lacus.
+          The Biodesign Challenge (BDC) is an international competition that partners university students with artists, designers, and scientists to envision the future of biotechnology. The Biodesign Challenge Summit 2026 takes place from June 11th to 12th, at the Parsons School of Design & the Museum of Modern Art (NYC).
         </p>
 
         <div className="button-group">
