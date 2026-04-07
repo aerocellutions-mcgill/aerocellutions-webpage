@@ -2,24 +2,29 @@
 import Hero from '../components/Hero';
 import ImageCarousel from '../components/ImageCarousel';
 import ImageSection from '../components/ImageSection'
+import LabBackground from '../assets/McGillLab.jpg'
 import oilspill from '../assets/Oilspill.jpg'
 
 import placeholder from '../assets/placeholderimage.png'
+import cellufoam from '../assets/Cellufoam.jpg'
+import aerogelTestVideo from '../assets/AerogelTestRotate.mp4'
+import MapNA from '../assets/blankmapCAUS.png'
 export default function Mission() {
   
   // Create your array of images to pass to the carousel
   const missionImages = [
     {
-      src: placeholder,
-      caption: "Synthesizing the cellulose aerogel framework."
+      src: cellufoam,
+      caption: "Cellulose aerogel, as synthesized in the lab.",
+    },
+    {
+      type: 'video', // Tell the carousel this is a video
+      src: aerogelTestVideo,
+      caption: "Testing the oil absorption capabilities of our cellulose aerogel.",
     },
     {
       src: placeholder,
-      caption: "Testing hydrophobic properties in the lab."
-    },
-    {
-      src: placeholder,
-      caption: "Targeting aquatic oil spill remediation."
+      caption: "if possible, I'd like a picture of the cellulose being prepared since I couldnt find any."
     }
   ];
 
@@ -28,7 +33,7 @@ export default function Mission() {
       <Hero 
         title="Our Mission" 
         subtitle="Engineering sustainable remediation."
-        bgImage={placeholder}
+        bgImage={LabBackground}
       />
       
       <section className="mission-content container">
@@ -55,14 +60,14 @@ export default function Mission() {
           bgColor="#AACDDC"
         >
           <p>
-            This section has not been finished but it will include three pictures of our lab work. The current images are placeholders.
+            We are synthesizing and experimenting with our aerogel in the laboratory.
           </p>
         </ImageCarousel>
 
 
         <ImageSection 
                 title="Our Impact" 
-                image={placeholder} 
+                image={MapNA} 
                 imageAlt="Lab research"
                 imageReversed={true}
                 bgColor="#F3E3D0"

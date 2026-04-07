@@ -36,11 +36,28 @@ export default function ImageCarousel({ title, children, images, bgColor }) {
           </button>
 
           <div className="carousel-image-wrapper">
-            <img 
-              src={images[currentIndex].src} 
-              alt={images[currentIndex].caption || "Carousel image"} 
-              className="carousel-image" 
-            />
+  
+            {/* If it is a video, render the <video> tag */}
+            {images[currentIndex].type === 'video' ? (
+              <video 
+                src={images[currentIndex].src} 
+                className="carousel-image" /* Reusing your exact same CSS! */
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+              />
+            ) : (
+              /* Otherwise, render the standard <img> tag */
+              <img 
+                src={images[currentIndex].src} 
+                alt={images[currentIndex].caption || "Carousel image"} 
+                className="carousel-image" 
+                style={{ transform: `rotate(${images[currentIndex].rotation || 0}deg)` }}
+              />
+            )}
+
+            {/* Your existing caption code stays exactly the same down here... */}
             {images[currentIndex].caption && (
               <div className="carousel-caption">
                 <p>{images[currentIndex].caption}</p>

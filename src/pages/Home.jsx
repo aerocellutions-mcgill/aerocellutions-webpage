@@ -5,6 +5,7 @@ import bdcposter from '../assets/BDC2026.png';
 import ImageSection from '../components/ImageSection';
 
 import placeholder from '../assets/placeholderimage.png'
+import LabBackground from '../assets/McGillLab.jpg'
 
 export default function Home() {
   return (
@@ -16,13 +17,13 @@ export default function Home() {
 
       <ImageSection 
         title="What We Do" 
-        image={placeholder} 
+        image={LabBackground} 
         imageAlt="Lab research"
         imageReversed={false}
         bgColor="#81A6C6"
       >
         <p>
-          At aerocellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments. (I'm thinking of putting a picture from our lab)
+          At aerocellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments.
         </p>
         <div className="button-group">
           <Link to="./Mission" className="btn btn-primary">

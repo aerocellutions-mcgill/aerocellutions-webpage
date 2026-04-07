@@ -20,8 +20,7 @@ export default function Contact() {
           </p>
           
           <div className="social-links">
-            {/* The mailto: link automatically opens the user's email app! */}
-            <a href="" className="social-btn email-btn">
+            <a href="mailto:aerocellutions.mcgill@gmail.com" className="social-btn email-btn">
               ✉️ Email Us
             </a>
            
