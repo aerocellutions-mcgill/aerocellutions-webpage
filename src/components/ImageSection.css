@@ -51,6 +51,10 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 900px) {
+  .feature-wrapper {
+    padding: 4rem 1.25rem;
+  }
+
   .split-container, 
   .split-container.reverse {
     flex-direction: column;
@@ -60,6 +64,39 @@
   .feature-main-header {
     font-size: 2.25rem;
     margin-bottom: 2.5rem;
+  }
+
+  .split-text,
+  .split-image {
+    width: 100%;
+  }
+
+  .split-title {
+    font-size: 2rem;
+  }
+
+  .split-text p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 520px) {
+  .feature-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .split-container,
+  .split-container.reverse {
+    gap: 1.75rem;
+  }
+
+  .split-title {
+    font-size: 1.75rem;
+  }
+
+  .split-image img {
+    border-radius: 8px;
   }
 }
 

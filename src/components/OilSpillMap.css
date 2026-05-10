@@ -172,7 +172,7 @@
 
 @media (max-width: 720px) {
   .oil-spill-map__stage {
-    aspect-ratio: 4 / 3.2;
+    aspect-ratio: 4 / 3.5;
   }
 
   .oil-spill-map__canvas {
@@ -185,12 +185,28 @@
     grid-template-columns: 1fr;
   }
 
+  .oil-spill-map__details {
+    padding: 0.9rem;
+  }
+
   .oil-spill-map__marker {
-    height: 1.55rem;
-    min-width: 1.55rem;
+    height: 1.45rem;
+    min-width: 1.45rem;
+    padding: 0 0.24rem;
   }
 
   .oil-spill-map__marker span {
-    font-size: 0.45rem;
+    font-size: 0.42rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .oil-spill-map__details h5 {
+    font-size: 1.05rem;
+  }
+
+  .oil-spill-map__details p,
+  .oil-spill-map__details dd {
+    font-size: 0.82rem;
   }
 }

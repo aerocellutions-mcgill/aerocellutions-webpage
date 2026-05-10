@@ -52,6 +52,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 #root {
@@ -115,6 +116,10 @@ code {
   font-size: 1rem;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn-primary {
@@ -159,4 +164,16 @@ code {
   gap: 2.5rem; 
   margin-top: 2rem; 
   flex-wrap: wrap;  
+}
+
+@media (max-width: 640px) {
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .button-group {
+    gap: 0.9rem;
+    width: 100%;
+  }
 }

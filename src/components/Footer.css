@@ -33,5 +33,10 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 0;
   }
 }

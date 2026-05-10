@@ -64,6 +64,7 @@
   background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
   color: white;
   padding: 3rem 2rem 1rem 2rem;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -98,4 +99,56 @@
 
 .right-arrow {
   right: 1rem;
+}
+
+@media (max-width: 720px) {
+  .carousel-section {
+    padding: 3rem 1rem;
+  }
+
+  .carousel-wrapper {
+    gap: 1.5rem;
+  }
+
+  .carousel-title {
+    font-size: 1.75rem;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
+  }
+
+  .carousel-image-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .carousel-caption {
+    padding: 2.5rem 1rem 0.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+
+  .carousel-arrow {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+  }
+
+  .left-arrow {
+    left: 0.5rem;
+  }
+
+  .right-arrow {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel-caption {
+    position: static;
+    background: #0f2f4e;
+    padding: 0.8rem;
+  }
 }

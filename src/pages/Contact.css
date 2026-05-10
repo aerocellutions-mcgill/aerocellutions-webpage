@@ -17,6 +17,8 @@
   gap: 2rem;
   position: relative;
   z-index: 2;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
 }
 
 .contact-boxes {
@@ -156,4 +158,44 @@
 .submit-btn:hover {
   background-color: #1A4A7A;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    margin: 0 auto 3rem;
+    padding: 2rem;
+  }
+
+  .contact-boxes {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-container {
+    border-radius: 0;
+    padding: 1.25rem;
+    width: 100%;
+  }
+
+  .contact-page-heading {
+    font-size: 2rem;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 1.25rem;
+  }
+
+  .contact-info h3,
+  .contact-form-wrapper h3 {
+    font-size: 1.45rem;
+  }
+
+  .social-btn {
+    font-size: 1rem;
+    padding: 0.95rem 1rem;
+    white-space: normal;
+  }
 }

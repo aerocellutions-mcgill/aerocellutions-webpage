@@ -87,3 +87,25 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 520px) {
+  .about-team-section {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .about-team-header h2 {
+    font-size: 2rem;
+  }
+
+  .about-team-header p {
+    font-size: 1rem;
+  }
+
+  .team-member-content {
+    padding: 1.2rem;
+  }
+
+  .team-member-content h3 {
+    font-size: 1.35rem;
+  }
+}
