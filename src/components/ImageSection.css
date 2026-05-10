@@ -30,13 +30,13 @@
   width: 100%;
   height: auto;
   border-radius: 12px;    
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+  box-shadow: var(--card-shadow); 
   display: block;
 }
 
 .split-title {
   font-size: 2.5rem;
-  color: #0F2F4E;
+  color: var(--text-h);
   margin-top: 0;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -44,7 +44,7 @@
 
 .split-text p {
   font-size: 1.25rem;
-  color: #24313F;
+  color: var(--text);
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -102,7 +102,7 @@
 
 .image-attribution {
   font-size: 0.75rem;
-  color: #24313F;
+  color: var(--text);
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: left;

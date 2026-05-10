@@ -1,15 +1,15 @@
 .oil-spill-map {
-  background: #f7fbf9;
-  border: 1px solid rgba(15, 47, 78, 0.14);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 8px;
-  box-shadow: 0 20px 30px rgba(15, 47, 78, 0.14);
-  color: #16324a;
+  box-shadow: var(--card-shadow);
+  color: var(--text);
   overflow: hidden;
   text-align: left;
 }
 
 .oil-spill-map h5 {
-  color: #0f2f4e;
+  color: var(--text-h);
   line-height: 1.15;
   margin: 0;
 }
@@ -21,7 +21,7 @@
 
 .oil-spill-map__stage {
   aspect-ratio: 16 / 12;
-  background: linear-gradient(180deg, #d7edf3 0%, #f2f6ef 100%);
+  background: linear-gradient(180deg, var(--map-stage-start) 0%, var(--map-stage-end) 100%);
   cursor: grab;
   overscroll-behavior: contain;
   overflow: hidden;
@@ -106,15 +106,15 @@
 }
 
 .oil-spill-map__details {
-  background: #ffffff;
-  border-top: 1px solid rgba(15, 47, 78, 0.12);
+  background: var(--map-panel-bg);
+  border-top: 1px solid var(--border);
   display: grid;
   gap: 0.9rem;
   padding: 1rem;
 }
 
 .oil-spill-map__details > div:first-child span {
-  color: #647582;
+  color: var(--text);
   display: block;
   font-size: 0.75rem;
   font-weight: 800;
@@ -124,7 +124,7 @@
 }
 
 .oil-spill-map__details p {
-  color: #344c5f;
+  color: var(--text);
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -137,13 +137,13 @@
 }
 
 .oil-spill-map__details dl div {
-  background: #eff6f4;
+  background: var(--map-stat-bg);
   border-radius: 8px;
   padding: 0.65rem;
 }
 
 .oil-spill-map__details dt {
-  color: #5f7180;
+  color: var(--text);
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1.15;
@@ -152,7 +152,7 @@
 }
 
 .oil-spill-map__details dd {
-  color: #0f2f4e;
+  color: var(--text-h);
   font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.25;
@@ -160,7 +160,7 @@
 }
 
 .oil-spill-map__details a {
-  color: #00509e;
+  color: var(--accent);
   font-size: 0.88rem;
   font-weight: 800;
   text-decoration: none;

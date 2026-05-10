@@ -1,7 +1,7 @@
 
 .footer {
-  background-color: #D2C4B4; 
-  border-top: 1px solid #D2C4B4; 
+  background: var(--footer-gradient); 
+  border-top: 1px solid var(--border); 
   padding: 2rem 0;
   margin-top: auto;
   width: 100%;
@@ -18,13 +18,13 @@
 
 .footer-section h3 {
   margin: 0 0 0.5rem 0;
-  color: #111827;
+  color: var(--footer-text);
   font-size: 1.25rem;
 }
 
 .footer-section p {
   margin: 0;
-  color: #374151;
+  color: var(--footer-muted);
   font-size: 0.9rem;
 }
 

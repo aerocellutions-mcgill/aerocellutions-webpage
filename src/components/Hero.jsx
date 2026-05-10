@@ -1,5 +1,6 @@
 import './Hero.css';
-import logo from '../assets/logo-dark.png';
+import logoDark from '../assets/logo-dark.png';
+import logoLight from '../assets/logo-light.png';
 
 export default function Hero ({ title, subtitle, bgImage, children, isHome }) {
     return (
@@ -9,7 +10,10 @@ export default function Hero ({ title, subtitle, bgImage, children, isHome }) {
             <div className="hero-content">
                 
                 {isHome ? (
-                    <img src={logo} alt="Aerocellutions Logo" className="hero-logo" />
+                    <span className="hero-logo-wrap">
+                        <img src={logoDark} alt="Aerocellutions Logo" className="hero-logo hero-logo-dark" />
+                        <img src={logoLight} alt="" aria-hidden="true" className="hero-logo hero-logo-light" />
+                    </span>
                 ) : (
                     <h1 className="hero-title">{title}</h1>
                 )}

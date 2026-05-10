@@ -45,7 +45,7 @@ export default function Mission() {
 
                 imageAlt="Lab research"
                 imageReversed={false}
-                bgColor="#81A6C6"
+                bgColor="var(--section-blue)"
               >
 
                 <p>
@@ -57,7 +57,7 @@ export default function Mission() {
         <ImageCarousel 
           title="What we Do" 
           images={missionImages}
-          bgColor="#AACDDC"
+          bgColor="var(--section-pale-blue)"
         >
           <p>
             We are synthesizing and experimenting with our aerogel in the laboratory.
@@ -69,7 +69,7 @@ export default function Mission() {
                 title="Our Impact" 
                 media={<OilSpillMap />}
                 imageReversed={true}
-                bgColor="#F3E3D0"
+                bgColor="var(--section-warm)"
               >
               <p>Oil spills leave long-lasting damage across oceans, lakes, rivers, wetlands, and coastal communities. Our work focuses on sustainable remediation materials that can help make future response efforts cleaner, safer, and less wasteful.</p>
 

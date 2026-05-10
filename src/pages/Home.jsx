@@ -20,7 +20,7 @@ export default function Home() {
         image={LabBackground} 
         imageAlt="Lab research"
         imageReversed={false}
-        bgColor="#81A6C6"
+        bgColor="var(--section-blue)"
       >
         <p>
           At aerocellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments.
@@ -38,7 +38,7 @@ export default function Home() {
         image={placeholder} 
         imageAlt="Team Photo"
         imageReversed={true}
-        bgColor="#AACDDC"
+        bgColor="var(--section-pale-blue)"
       >
         <p>
           I'm thinking of taking that team picture we have on the staircase here, but perhaps another team picture can be done since I think the members have changed since last semester.
@@ -60,7 +60,7 @@ export default function Home() {
         image={bdcposter} 
         imageAlt="BDC 2025"
         imageReversed={false}
-        bgColor="#F3E3D0"
+        bgColor="var(--section-warm)"
       >
         <p>
           The Biodesign Challenge (BDC) is an international competition that partners university students with artists, designers, and scientists to envision the future of biotechnology. The Biodesign Challenge Summit 2026 takes place from June 11th to 12th, at the Parsons School of Design & the Museum of Modern Art (NYC).

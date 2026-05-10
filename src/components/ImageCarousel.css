@@ -20,14 +20,14 @@
 }
 
 .carousel-title {
-  color: #1A4A7A; 
+  color: var(--text-h); 
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
 .carousel-description {
-  color: #4a4a4a;
+  color: var(--text);
   font-size: 1.1rem;
   line-height: 1.6;
 }
@@ -38,8 +38,8 @@
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  background-color: #f0f0f0;
+  box-shadow: var(--card-shadow);
+  background-color: var(--surface-muted);
 }
 
 .carousel-image-wrapper {
@@ -90,7 +90,7 @@
 }
 
 .carousel-arrow:hover {
-  background-color: #1A4A7A;
+  background-color: var(--accent);
 }
 
 .left-arrow {
