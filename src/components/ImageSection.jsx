@@ -1,6 +1,6 @@
 import './ImageSection.css';
 
-export default function FeatureSplit({ title, image, attribution, imageAlt, imageReversed, bgColor, children,  }) {
+export default function FeatureSplit({ title, image, media, attribution, imageAlt, imageReversed, bgColor, children,  }) {
   return (
     <section style={{backgroundColor : bgColor}}>
         <div className="feature-wrapper">
@@ -13,7 +13,7 @@ export default function FeatureSplit({ title, image, attribution, imageAlt, imag
             </div>
 
             <div className="split-image">
-            <img src={image} alt={imageAlt || "Feature"} />
+            {media || <img src={image} alt={imageAlt || "Feature"} />}
            {attribution && (
                 <p className="image-attribution">{attribution}</p>
               )}

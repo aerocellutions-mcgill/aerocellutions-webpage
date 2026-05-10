@@ -12,40 +12,45 @@ export default function Contact() {
       />
       
       <section className="contact-container">
+        <h2 className="contact-page-heading">Contact Us</h2>
         
-        <div className="contact-info">
-          <h2>Contact Us</h2>
-          <p>
-            Our Socials:
-          </p>
-          
-          <div className="social-links">
-            <a href="mailto:aerocellutions.mcgill@gmail.com" className="social-btn email-btn">
-              ✉️ Email Us
-            </a>
-           
-            <a href="https://www.instagram.com/aerocellutions.mcgill/" target="_blank" rel="noopener noreferrer" className="social-btn ig-btn">
-              📸 Instagram
-            </a>
+        <div className="contact-boxes">
+          <div className="contact-info">
+            <h3>Our Socials</h3>
+            <p>Reach out through our social channels!</p>
             
-            <a href="https://www.linkedin.com/company/aerocellutions/" target="_blank" rel="noopener noreferrer" className="social-btn linkedin-btn">
-              💼 LinkedIn
-            </a>
+            <div className="social-links">
+              <a href="mailto:aerocellutions.mcgill@gmail.com" className="social-btn email-btn">
+                ✉️ Email Us
+              </a>
+             
+              <a href="https://www.instagram.com/aerocellutions.mcgill/" target="_blank" rel="noopener noreferrer" className="social-btn ig-btn">
+                📸 Instagram
+              </a>
+              
+              <a href="https://www.linkedin.com/company/aerocellutions/" target="_blank" rel="noopener noreferrer" className="social-btn linkedin-btn">
+                💼 LinkedIn
+              </a>
+            </div>
+          </div>
+
+
+          <div className="contact-form-wrapper">
+            <h3>Send a Message</h3>
+            <p>Send us a message directly to our team inbox!</p>
+            
+            <form action="https://formspree.io/f/xqengqzg" method="POST" className="contact-form">
+
+              <input type="text" name="name" placeholder="Your Name" required />
+              
+              <input type="email" name="email" placeholder="Your Email" required />
+
+              <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+              
+              <button type="submit" className="submit-btn">Send Message</button>
+            </form>
           </div>
         </div>
-
-
-        <div className="contact-form-wrapper">
-          <h3>Send a Message</h3>
-          <p>This form will just end a formatted email to whatever email we want to use. It is not yet functional.</p>
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="How can we help?" rows="5" required></textarea>
-            <button type="submit" className="submit-btn">Send Message</button>
-          </form>
-        </div>
-
       </section>
     </div>
   );

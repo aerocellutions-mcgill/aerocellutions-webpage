@@ -1,0 +1,196 @@
+.oil-spill-map {
+  background: #f7fbf9;
+  border: 1px solid rgba(15, 47, 78, 0.14);
+  border-radius: 8px;
+  box-shadow: 0 20px 30px rgba(15, 47, 78, 0.14);
+  color: #16324a;
+  overflow: hidden;
+  text-align: left;
+}
+
+.oil-spill-map h5 {
+  color: #0f2f4e;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.oil-spill-map h5 {
+  font-size: 1.25rem;
+  margin-top: 0.18rem;
+}
+
+.oil-spill-map__stage {
+  aspect-ratio: 16 / 12;
+  background: linear-gradient(180deg, #d7edf3 0%, #f2f6ef 100%);
+  cursor: grab;
+  overscroll-behavior: contain;
+  overflow: hidden;
+  position: relative;
+  touch-action: none;
+  user-select: none;
+}
+
+.oil-spill-map__stage:active {
+  cursor: grabbing;
+}
+
+.oil-spill-map__canvas {
+  aspect-ratio: 1920 / 1463;
+  left: -7%;
+  position: absolute;
+  top: -3%;
+  transform-origin: center center;
+  width: 108%;
+}
+
+.oil-spill-map__canvas img {
+  display: block;
+  opacity: 0.84;
+  pointer-events: none;
+  width: 100%;
+}
+
+.oil-spill-map__marker {
+  align-items: center;
+  background: #1f69b3;
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 0 0 4px rgba(31, 105, 179, 0.18), 0 8px 16px rgba(15, 47, 78, 0.2);
+  color: #ffffff;
+  display: inline-flex;
+  height: 1.95rem;
+  justify-content: center;
+  min-width: 1.95rem;
+  padding: 0 0.32rem;
+  position: absolute;
+  touch-action: manipulation;
+  transform: translate(-50%, -50%);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  user-select: none;
+  z-index: 2;
+}
+
+.oil-spill-map__marker span {
+  font-size: 0.56rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.oil-spill-map__marker.is-canada {
+  background: #c84630;
+  box-shadow: 0 0 0 4px rgba(200, 70, 48, 0.18), 0 8px 16px rgba(15, 47, 78, 0.2);
+}
+
+.oil-spill-map__marker:hover,
+.oil-spill-map__marker:focus-visible,
+.oil-spill-map__marker.is-active,
+.oil-spill-map__marker.is-us:hover,
+.oil-spill-map__marker.is-us:focus-visible,
+.oil-spill-map__marker.is-us.is-active {
+  background: #0f3f73;
+  box-shadow: 0 0 0 6px rgba(9, 34, 53, 0.2), 0 12px 20px rgba(15, 47, 78, 0.24);
+  transform: translate(-50%, -50%) scale(1.12);
+  z-index: 8;
+}
+
+.oil-spill-map__marker.is-canada:hover,
+.oil-spill-map__marker.is-canada:focus-visible,
+.oil-spill-map__marker.is-canada.is-active {
+  background: #8f2f22;
+}
+
+.oil-spill-map__marker:focus-visible,
+.oil-spill-map__marker:focus-visible {
+  outline: 3px solid rgba(0, 80, 158, 0.45);
+  outline-offset: 2px;
+}
+
+.oil-spill-map__details {
+  background: #ffffff;
+  border-top: 1px solid rgba(15, 47, 78, 0.12);
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+.oil-spill-map__details > div:first-child span {
+  color: #647582;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.oil-spill-map__details p {
+  color: #344c5f;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.oil-spill-map__details dl {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0;
+}
+
+.oil-spill-map__details dl div {
+  background: #eff6f4;
+  border-radius: 8px;
+  padding: 0.65rem;
+}
+
+.oil-spill-map__details dt {
+  color: #5f7180;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+}
+
+.oil-spill-map__details dd {
+  color: #0f2f4e;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.oil-spill-map__details a {
+  color: #00509e;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.oil-spill-map__details a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .oil-spill-map__stage {
+    aspect-ratio: 4 / 3.2;
+  }
+
+  .oil-spill-map__canvas {
+    left: -14%;
+    top: -1%;
+    width: 120%;
+  }
+
+  .oil-spill-map__details dl {
+    grid-template-columns: 1fr;
+  }
+
+  .oil-spill-map__marker {
+    height: 1.55rem;
+    min-width: 1.55rem;
+  }
+
+  .oil-spill-map__marker span {
+    font-size: 0.45rem;
+  }
+}

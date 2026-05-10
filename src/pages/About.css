@@ -1,0 +1,89 @@
+.about-page {
+  background: #f3e3d0;
+}
+
+.about-team-section {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 5rem 2rem 6rem;
+  text-align: left;
+}
+
+.about-team-header {
+  margin: 0 auto 2.5rem;
+  max-width: 760px;
+  text-align: center;
+}
+
+.about-team-header h2 {
+  color: #0f2f4e;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.about-team-header p {
+  color: #344c5f;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.team-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.team-member-card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 47, 78, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 14px 24px rgba(15, 47, 78, 0.12);
+  overflow: hidden;
+}
+
+.team-member-card img {
+  aspect-ratio: 4 / 3;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.team-member-content {
+  padding: 1.5rem;
+}
+
+.team-member-role {
+  color: #4b6b7a;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.team-member-content h3 {
+  color: #0f2f4e;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  margin: 0 0 0.8rem;
+}
+
+.team-member-content p:last-child {
+  color: #344c5f;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 800px) {
+  .about-team-section {
+    padding: 4rem 1.25rem 5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

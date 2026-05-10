@@ -2,13 +2,13 @@
 import Hero from '../components/Hero';
 import ImageCarousel from '../components/ImageCarousel';
 import ImageSection from '../components/ImageSection'
+import OilSpillMap from '../components/OilSpillMap';
 import LabBackground from '../assets/McGillLab.jpg'
 import oilspill from '../assets/Oilspill.jpg'
 
 import placeholder from '../assets/placeholderimage.png'
 import cellufoam from '../assets/Cellufoam.jpg'
 import aerogelTestVideo from '../assets/AerogelTestRotate.mp4'
-import MapNA from '../assets/blankmapCAUS.png'
 export default function Mission() {
   
   // Create your array of images to pass to the carousel
@@ -67,12 +67,11 @@ export default function Mission() {
 
         <ImageSection 
                 title="Our Impact" 
-                image={MapNA} 
-                imageAlt="Lab research"
+                media={<OilSpillMap />}
                 imageReversed={true}
                 bgColor="#F3E3D0"
               >
-              <p>Today, [give some statistic about like burning oil spills or something. This page might also have an interactive oil spill map.]</p>
+              <p>Oil spills leave long-lasting damage across oceans, lakes, rivers, wetlands, and coastal communities. Our work focuses on sustainable remediation materials that can help make future response efforts cleaner, safer, and less wasteful.</p>
 
         </ImageSection>
 

@@ -35,16 +35,16 @@
 }
 
 .split-title {
-  font-size: 2rem;
-  color: #00509e;
+  font-size: 2.5rem;
+  color: #0F2F4E;
   margin-top: 0;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .split-text p {
-  font-size: 1.15rem;
-  color: #4b5563;
+  font-size: 1.25rem;
+  color: #24313F;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -65,10 +65,9 @@
 
 .image-attribution {
   font-size: 0.75rem;
-  color: #555; /* A subtle dark grey */
+  color: #24313F;
   margin-top: 0.5rem;
   margin-bottom: 0;
   text-align: left;
   font-style: italic;
-  opacity: 0.8;
 }

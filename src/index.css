@@ -131,12 +131,12 @@ code {
 
 .btn-secondary {
   background-color: transparent;
-  color: #1a4a7a;
-  border: 2px solid #1a4a7a;
+  color: #0f2f4e;
+  border: 2px solid #0f2f4e;
 }
 
 .btn-secondary:hover {
-  background-color: rgba(26, 74, 122, 0.1);
+  background-color: rgba(15, 47, 78, 0.12);
 }
 
 .external-btn {
