@@ -66,7 +66,7 @@ export default function Mission() {
 
 
         <ImageSection 
-                title="Our Impact" 
+                title="Oil Spills in Context" 
                 media={<OilSpillMap />}
                 imageReversed={true}
                 bgColor="var(--section-warm)"

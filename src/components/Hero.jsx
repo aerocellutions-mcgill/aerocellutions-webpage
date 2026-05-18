@@ -18,7 +18,11 @@ export default function Hero ({ title, subtitle, bgImage, children, isHome }) {
                     <h1 className="hero-title">{title}</h1>
                 )}
 
-                {subtitle && <p className="hero-subtitle">{subtitle}</p>} 
+                {subtitle && (
+                    <p className={`hero-subtitle${isHome ? ' hero-home-subtitle' : ''}`}>
+                        {subtitle}
+                    </p>
+                )} 
                 
                 <div className="hero-interactables">
                     {children}

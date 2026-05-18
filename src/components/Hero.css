@@ -40,6 +40,11 @@
   font-weight: 500;
 }
 
+.hero-home-subtitle {
+  font-family: 'Syncopate', var(--heading);
+  font-weight: 400;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
