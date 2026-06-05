@@ -13,12 +13,12 @@ const teamMembers = [
     bio: 'My favourite moment in the lab was when we finally figured out how to make our product float on water! The cherry on top was watching it absorb all the oil 🙂.',
   },
   {
-    name: 'Team Member 1',
+    name: 'Cassidy Devereaux',
     roles: ['Co-Team Lead', 'Research Member'],
-    year: 'Year',
-    major: 'Major',
+    year: '3rd year',
+    major: 'Bioresource Engineering',
     image: placeholder,
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
+    bio: 'My favourite memory is getting to meet with communities impacted by oil spills and learn more about what they need.',
   },
   {
     name: 'Lorenzo Costello',
@@ -52,7 +52,7 @@ const teamMembers = [
     image: placeholder,
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.',
   },
-  
+
   {
     name: 'Jerry Wong',
     roles: ['Research Member', 'Website Developer'],
