@@ -4,7 +4,7 @@ import oceanfront from '../assets/oceanfront.jpg';
 import bdcposter from '../assets/BDC2026.png';
 import ImageSection from '../components/ImageSection';
 
-import placeholder from '../assets/placeholderimage.png'
+import teamPhoto from '../assets/Aerocellutions_team_photo.JPG'
 import LabBackground from '../assets/McGillLab.jpg'
 
 export default function Home() {
@@ -35,13 +35,13 @@ export default function Home() {
 
       <ImageSection 
         title="Our Team" 
-        image={placeholder} 
+        image={teamPhoto} 
         imageAlt="Team Photo"
         imageReversed={true}
         bgColor="var(--section-pale-blue)"
       >
         <p>
-          I'm thinking of taking that team picture we have on the staircase here, but perhaps another team picture can be done since I think the members have changed since last semester.
+          We are a team of engineering and science students at McGill University working together to develop sustainable materials for cleaner oil spill remediation.
         </p>
         <div className="button-group">
           <Link to="./About" className="btn btn-primary">

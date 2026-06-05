@@ -42,6 +42,7 @@ export default function ImageCarousel({ title, children, images, bgColor }) {
               <video 
                 src={images[currentIndex].src} 
                 className="carousel-image" /* Reusing your exact same CSS! */
+                style={{ objectPosition: images[currentIndex].objectPosition || 'center' }}
                 autoPlay 
                 loop 
                 muted 
@@ -53,7 +54,10 @@ export default function ImageCarousel({ title, children, images, bgColor }) {
                 src={images[currentIndex].src} 
                 alt={images[currentIndex].caption || "Carousel image"} 
                 className="carousel-image" 
-                style={{ transform: `rotate(${images[currentIndex].rotation || 0}deg)` }}
+                style={{ 
+                  objectPosition: images[currentIndex].objectPosition || 'center',
+                  transform: `rotate(${images[currentIndex].rotation || 0}deg)`,
+                }}
               />
             )}
 

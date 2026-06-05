@@ -6,9 +6,10 @@ import OilSpillMap from '../components/OilSpillMap';
 import LabBackground from '../assets/McGillLab.jpg'
 import oilspill from '../assets/Oilspill.jpg'
 
-import placeholder from '../assets/placeholderimage.png'
 import cellufoam from '../assets/Cellufoam.jpg'
 import aerogelTestVideo from '../assets/AerogelTestRotate.mp4'
+import woolScouringVideo from '../assets/Wool Scouring.mp4'
+import celluloseBlendingVideo from '../assets/Cellulose Blending.mp4'
 export default function Mission() {
   
   // Create your array of images to pass to the carousel
@@ -18,13 +19,20 @@ export default function Mission() {
       caption: "Cellulose aerogel, as synthesized in the lab.",
     },
     {
+      type: 'video',
+      src: woolScouringVideo,
+      caption: "Scouring the wool, a necessary step for removing possible marine contaminants in our aerogel.",
+    },
+    {
       type: 'video', // Tell the carousel this is a video
       src: aerogelTestVideo,
       caption: "Testing the oil absorption capabilities of our cellulose aerogel.",
     },
     {
-      src: placeholder,
-      caption: "if possible, I'd like a picture of the cellulose being prepared since I couldnt find any."
+      type: 'video',
+      src: celluloseBlendingVideo,
+      caption: "Blending cellulose into a pulp for use in our aerogel.",
+      objectPosition: 'center 30%',
     }
   ];
 
@@ -32,7 +40,9 @@ export default function Mission() {
     <div className="mission-page">
       <Hero 
         title="Our Mission" 
-        subtitle="Engineering sustainable remediation."
+        subtitle="Sustainable oil spill remediation without secondary pollution.
+Our novelty lies in replacing conventional siloxane coatings with biodegradable alternatives
+while maintaining high oil absorption capacity."
         bgImage={LabBackground}
       />
       
@@ -49,7 +59,10 @@ export default function Mission() {
               >
 
                 <p>
-                  Oil spills have long had disasterous consequences for our ecosystems. While we have tools for dealing with them, they are traditionanally themselves harmful to the enviornment. At aerocellutions, we are designing an enviornmentally friendly and afordable alternative to clean up oil spills.
+                  Oil spills in aquatic environments remain a persistent global environmental crisis, threatening
+ecosystems, wildlife, and coastal communities. Current cleanup methods rely heavily on plastic-
+based sorbents that are non-biodegradable and require specialized disposal, often generating
+additional pollution.
                 </p>
               
         </ImageSection>
@@ -60,7 +73,11 @@ export default function Mission() {
           bgColor="var(--section-pale-blue)"
         >
           <p>
-            We are synthesizing and experimenting with our aerogel in the laboratory.
+            In the lab, we synthesize porous materials and test their oil absorption and water repellent
+properties. We also evaluate downstream oil recovery to assess reuse potential and end-of-life
+impact. Through stakeholder interviews with environmental responders and industry
+professionals, we ensure our solution aligns with real-world remediation needs and waste
+management systems.
           </p>
         </ImageCarousel>
 
@@ -71,7 +88,9 @@ export default function Mission() {
                 imageReversed={true}
                 bgColor="var(--section-warm)"
               >
-              <p>Oil spills leave long-lasting damage across oceans, lakes, rivers, wetlands, and coastal communities. Our work focuses on sustainable remediation materials that can help make future response efforts cleaner, safer, and less wasteful.</p>
+              <p>With the continued reliance on oil in many industries, the threat of oil spills in oceans and on
+land is high. With the high traffic of fuel ships in central and northern waters, there continues to
+be numerous marine oil spills reported every year.</p>
 
         </ImageSection>
 

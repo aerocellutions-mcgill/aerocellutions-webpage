@@ -54,7 +54,7 @@
 .hero-title {
   font-size: 2rem; /* Reduced from 3.5rem. (2.5rem is usually exactly 40px) */
   color: var(--hero-title); 
-  margin: 0;
+  margin: 0 0 2rem;
 }
 
 .hero-logo-wrap {
