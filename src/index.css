@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --text: #344c5f;
   --text-h: #0f2f4e;
@@ -22,6 +26,7 @@
   --section-warm: #f3e3d0;
   --footer-bg: #d2c4b4;
   --footer-gradient: linear-gradient(180deg, #f3e3d0 0%, #d9c2aa 52%, #aacddc 100%);
+  --footer-gradient-top: #f3e3d0;
   --footer-text: #0f2f4e;
   --footer-muted: #344c5f;
   --hero-overlay: rgba(255, 255, 255, 0.6);
@@ -77,6 +82,7 @@ html[data-theme='dark'] {
   --section-warm: #2b2620;
   --footer-bg: #102633;
   --footer-gradient: linear-gradient(180deg, #2b2620 0%, #102633 100%);
+  --footer-gradient-top: #2b2620;
   --footer-text: #eaf6f8;
   --footer-muted: #c8d8dd;
   --hero-overlay: rgba(7, 25, 35, 0.62);

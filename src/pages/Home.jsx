@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import oceanfront from '../assets/oceanfront.jpg';
 import bdcposter from '../assets/BDC2026.png';
 import ImageSection from '../components/ImageSection';
+import Timeline from '../components/Timeline';
 
 import teamPhoto from '../assets/Aerocellutions_team_photo.JPG'
 import LabBackground from '../assets/McGillLab.jpg'
@@ -10,7 +11,7 @@ import LabBackground from '../assets/McGillLab.jpg'
 export default function Home() {
   return (
     <div className="home-container">
-      <Hero title="Aerocellutions"
+      <Hero title="AeroCellutions"
       subtitle="A part of McGill Biodesign"
       bgImage={oceanfront}
       isHome={true}></Hero>
@@ -23,7 +24,7 @@ export default function Home() {
         bgColor="var(--section-blue)"
       >
         <p>
-          At aerocellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments.
+          At AeroCellutions, we are designing an environmentally friendly and afordable material for cleaning up oil spills in marine enviornments.
         </p>
         <div className="button-group">
           <Link to="./Mission" className="btn btn-primary">
@@ -83,6 +84,8 @@ export default function Home() {
           </a>
         </div>
       </ImageSection>
+
+      <Timeline subtitle="Project Timeline" />
 
 
     </div>

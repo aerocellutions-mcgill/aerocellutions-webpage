@@ -38,15 +38,15 @@
 }
 
 .team-grid-featured {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
-.team-grid-featured .team-member-card:first-child {
-  grid-column: 2;
-}
-
-.team-grid-featured .team-member-card:nth-child(2) {
-  grid-column: 3;
+.team-grid-subleads {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1.5rem;
+  max-width: 900px;
 }
 
 .team-member-card {
@@ -64,6 +64,14 @@
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.team-member-photo--theo {
+  object-position: 82% 44%;
+}
+
+.team-member-photo--jerry {
+  object-position: center 22%;
 }
 
 .team-member-content {
@@ -85,6 +93,7 @@
   letter-spacing: 0;
   line-height: 1.2;
   margin-bottom: 0.2rem;
+  min-height: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -122,11 +131,6 @@
 
   .team-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .team-grid-featured .team-member-card:first-child,
-  .team-grid-featured .team-member-card:nth-child(2) {
-    grid-column: auto;
   }
 }
 

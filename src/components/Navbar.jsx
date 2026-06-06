@@ -28,7 +28,7 @@ export default function Navbar({ theme, onToggleTheme }) {
     <nav className="navbar">
       <div className="nav-logo">
         <Link to="/">
-          <img src={logo} alt="Aerocellutions Logo" className="logo-image" />
+          <img src={logo} alt="AeroCellutions Logo" className="logo-image" />
         </Link>
       </div>
 

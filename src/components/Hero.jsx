@@ -11,7 +11,7 @@ export default function Hero ({ title, subtitle, bgImage, children, isHome }) {
                 
                 {isHome ? (
                     <span className="hero-logo-wrap">
-                        <img src={logoDark} alt="Aerocellutions Logo" className="hero-logo hero-logo-dark" />
+                        <img src={logoDark} alt="AeroCellutions Logo" className="hero-logo hero-logo-dark" />
                         <img src={logoLight} alt="" aria-hidden="true" className="hero-logo hero-logo-light" />
                     </span>
                 ) : (
